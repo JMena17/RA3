@@ -243,6 +243,7 @@ public class VistasVendedor1 extends javax.swing.JFrame {
             nuevo.setVisible(true);
             dispose();
             
+            
         } else {
             JOptionPane.showMessageDialog(null, "Aun faltan datos por rellenar.");
         }

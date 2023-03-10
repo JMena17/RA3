@@ -5,11 +5,6 @@ import java.util.LinkedList;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Juancho
- */
-
 public class Pos extends JFrame {
     
     /*public void tablainfo() {

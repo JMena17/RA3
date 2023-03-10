@@ -223,10 +223,10 @@ public class VistasVendedor2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnActualizarVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarVActionPerformed
-        
+  
         listaVendedores.add(new Vendedor(Integer.parseInt(textCodigo.getText()), textNombre.getText(), 
                 Integer.parseInt(textCaja.getText()), Integer.parseInt(textVentas.getText()), 
-                textGenero.getText(),pwdField.getText()));
+                textGenero.getText(), pwdField.getText()));
         
         JOptionPane.showMessageDialog(null, "Los datos del vendedor han sido actualizados con éxito.");
         Tabla nuevo = new Tabla();
@@ -250,15 +250,16 @@ public class VistasVendedor2 extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(null, "Los datos del vendedor han sido actualizados con éxito.");
         Tabla nuevo = new Tabla();
+        nuevo.show();
         dispose();
     }
     
     public void mostrar(int id) {
         textCodigo.setText(Vendedor.listaVendedores.get(id).getCodigo()+"");
-        textNombre.setText(Vendedor.listaVendedores.get(id).getNombre()+"");
+        textNombre.setText(Vendedor.listaVendedores.get(id).getNombre());
         textCaja.setText(Vendedor.listaVendedores.get(id).getCaja()+"");
         textVentas.setText(Vendedor.listaVendedores.get(id).getVentas()+"");
-        textGenero.setText(Vendedor.listaVendedores.get(id).getGenero()+"");
+        textGenero.setText(Vendedor.listaVendedores.get(id).getGenero());
     }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
